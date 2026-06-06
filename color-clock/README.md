@@ -1,16 +1,36 @@
-# React + Vite
+# Color Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + Vite demo that displays the current time in the center of the page.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Displays the formatted time using \date-fns\
+- Centers the clock in the viewport with a styled time panel
+- Uses Vite for fast development and HMR
 
-## React Compiler
+## Files of interest
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- \src/App.jsx\ — main clock component
+- \src/App.css\ — styles for the centered time display
+- \src/index.css\ — global CSS (empty by default)
 
-## Expanding the ESLint configuration
+## Run locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install dependencies:
+
+   npm install
+
+2. Start the development server:
+
+   npm run dev
+
+3. Open the local URL shown in the terminal.
+
+## Build for production
+
+npm run build
+
+## Notes
+
+- The current clock display is formatted using \Format(new Date(), 'HH:mm:ss')\.
+- The app renders the time inside a \.time-container\ wrapper for clean centering.
