@@ -34,9 +34,4 @@ function App() {
 }
 
 export default App
-      <section id="spacer"></section>
-    </>
-  )
-}
 
-export default App
